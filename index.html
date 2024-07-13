@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>meet&mdash;Tailwind</title>
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- logo -->
+    <header class="flex justify-center items-center w-screen mb-10 md:mb-16">
+      <img src="assets/logo.svg" alt="logo" class="mt-12" />
+    </header>
+    <!-- hero Section -->
+    <section
+      id="hero"
+      class="grid space-y-12 mb-10 md:space-y-0 md:grid-cols-4 md:space-x-10 w-full"
+    >
+      <!-- desktop left hero image -->
+      <div>
+        <img
+          class="hidden md:block"
+          src="assets/desktop/image-hero-left.png"
+          alt="icons"
+        />
+      </div>
+      <!-- Mobile Image -->
+      <div class="md:absolute md:bottom-2">
+        <img src="assets/tablet/image-hero.png" class="md:hidden" alt="icons" />
+      </div>
+      <!-- Hero content container -->
+      <div
+        class="flex flex-col space-y-10 text-center px-4 gap-y-1 md:col-start-2 md:col-span-2"
+      >
+        <!-- Hero Heading -->
+        <h1 class="text-darkblue font-bold text-5xl">
+          Group Chat for Everyone
+        </h1>
+        <!-- Hero Para -->
+        <p class="text-2xl text-center text-lightgray leading-relaxed">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <!-- Hero Buttons Container -->
+        <div
+          class="flex flex-col space-y-12 mx-auto xmd:md:flex-row xmd:space-y-0 xmd:space-x-6 md:space-x-0"
+        >
+          <!-- Button 1 -->
+          <div>
+            <a
+              href="#"
+              class="py-4 text-white px-12 bg-cyan1 font-bold rounded-3xl hover:bg-hover1 duration-500"
+              >download <span class="text-cyan2">v1.3</span></a
+            >
+          </div>
+          <!-- Button 2 -->
+          <div>
+            <a
+              href="#"
+              class="py-4 text-white px-10 bg-purple1 font-bold rounded-3xl hover:bg-hover2 duration-500"
+              >What is it ?</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- desktop right hero image  -->
+      <div>
+        <img
+          class="hidden md:block"
+          src="assets/desktop/image-hero-right.png"
+          alt="icons"
+        />
+      </div>
+    </section>
+
+    <!-- 01 Step number container -->
+    <div class="flex items-center justify-center flex-col mx-auto md:mt-16">
+      <!-- Line -->
+      <div class="h-20 w-[1px] bg-lightgray opacity-40"></div>
+      <!-- Step NUM -->
+      <div
+        class="flex justify-center items-center text-lightgray w-14 h-14 rounded-full border border-lightgray font-bold border-opacity-40"
+      >
+        01
+      </div>
+    </div>
+
+    <!-- Gallery Section container  -->
+    <section
+      id="Gallery"
+      class="grid grid-cols-2 px-8 gap-6 mt-10 md:grid-cols-4 md:px-20 md:mt-16"
+    >
+      <div>
+        <img
+          src="assets/desktop/image-woman-in-videocall.jpg"
+          class="rounded-xl"
+          alt="image-woman-in-videocall"
+        />
+      </div>
+      <div>
+        <img
+          src="assets/desktop/image-women-videochatting.jpg"
+          class="rounded-xl"
+          alt="image-women-videochatting"
+        />
+      </div>
+      <div>
+        <img
+          src="assets/desktop/image-men-in-meeting.jpg"
+          class="rounded-xl"
+          alt="image-men-in-meeting"
+        />
+      </div>
+      <div>
+        <img
+          src="assets/desktop/image-man-texting.jpg"
+          class="rounded-xl"
+          alt="image-man-texting"
+        />
+      </div>
+    </section>
+
+    <!-- Decription Section Container -->
+    <section
+      class="flex flex-col px-5 w-[500px] mx-auto text-center mt-10 md:mt-16"
+    >
+      <!-- sm  Heading  -->
+      <div class="text-cyan1 tracking-wider uppercase font-bold">
+        Built for modern use
+      </div>
+      <!-- Heading Primary -->
+      <div>
+        <h1 class="text-4xl font-bold text-darkblue mt-4">
+          Smarter meetings, all in one place
+        </h1>
+      </div>
+      <div>
+        <p class="text-lightgray mt-10 leading-relaxed">
+          Send messages, share files, show your screen, and record your meetings
+          all in one workspace. Control who can join with invite only team
+          access, data encryption, and data export.
+        </p>
+      </div>
+    </section>
+
+    <!-- 01 Step number container -->
+    <div
+      class="flex items-center justify-center mt-10 flex-col mx-auto md:mt-16 z-50"
+    >
+      <!-- Line -->
+      <div class="h-20 w-[1px] bg-lightgray opacity-40"></div>
+      <!-- Step NUM -->
+      <div
+        class="flex justify-center items-center text-lightgray w-14 h-14 rounded-full border border-lightgray font-bold border-opacity-40 bg-white z-50"
+      >
+        01
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="-translate-y-8">
+      <!-- footer mobile image -->
+      <img
+        src="assets/mobile/image-footer.jpg"
+        class="relative h-[370px] w-screen md:hidden"
+        alt="image-woman-in-videocall"
+      />
+      <!-- footer desktop image -->
+      <img
+        src="assets/desktop/image-footer.jpg"
+        class="relative h-[370px] w-screen hidden md:block"
+        alt="image-woman-in-videocall"
+      />
+      <!-- Footer content container -->
+      <div
+        class="flex items-center flex-col gap-y-10 bg-opacity-80 bg-cyan1 px-10 py-20 text-center md:flex-row md:space-y-0 md:justify-between md:w-full md:text-start absolute top-0 h-[370px] md:px-9 lg:px-28"
+      >
+        <!-- footer heading -->
+        <div>
+          <h1 class="text-4xl font-bold text-white md:w-72 lg:w-80">
+            Experience more together
+          </h1>
+        </div>
+        <!-- footer description -->
+        <div>
+          <p class="text-white leading-relaxed md:w-64 lg:w-80">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+        </div>
+        <!-- footer -->
+        <div>
+          <a
+            href="#"
+            class="py-4 text-white px-12 bg-purple1 font-bold rounded-3xl md:px-5 md:py-3 lg:px-12 lg:py-4 hover:bg-hover2 duration-500"
+            >download <span class="text-purple2">v1.3</span></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

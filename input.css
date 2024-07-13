@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-img-mob {
+  background-image: url("assets/mobile/image-footer.jpg");
+}
